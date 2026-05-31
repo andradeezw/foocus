@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+} 
+
+:root {
+
+  /* CORES PRINCIPAIS */
+  --cor-fundo: #1f1b18;
+  --cor-fundo-secundario: #2a2420;
+  --cor-card: #332b26;
+
+  /* LARANJA RELAXANTE */
+  --cor-primaria: #e89b5f;
+  --cor-primaria-hover: #f0aa72;
+
+  /* TEXTOS */
+  --cor-texto: #f5f1ed;
+  --cor-texto-secundario: #c7b8ab;
+
+  /* DETALHES */
+  --cor-borda: #463a33;
+  --cor-sucesso: #8ec07c;
+  --cor-alerta: #d79921;
+
+  /* SOMBRAS */
+  --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+  /* BORDER RADIUS */
+  --borda-grande: 20px;
+  --borda-media: 12px;
+  --borda-pequena: 8px;
+
+  /* TRANSIÇÕES */
+  --transicao-padrao: 0.3s ease;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+
+.caixa-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texto-titulo {
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    font-size: 7.5rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    margin-bottom: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 10px;
+    transform: scaleX(1.1);
+
+}
+
+.texto-subtitulo {
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.caixa-timer {
+    margin-top: 100px;
+    background-color: var(--cor-fundo-secundario);
+    border-radius: var(--borda-grande);
+    padding: 40px;
+    max-width: 400px;
+    margin: 5px auto;
+    box-shadow: var(--sombra-suave);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.texto-tempo {
+    text-align: center;
+    
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+.timer-pausado {
+    color: gray !important;
+}
+.botao-iniciar, .botao-pausar, .botao-resetar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: var(--borda-media);
+    cursor: pointer;
+    transition: var(--transicao-padrao);
+}
+
+

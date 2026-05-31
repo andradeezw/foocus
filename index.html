@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foocus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container-principal">
+
+    <section class="caixa-pomodoro">
+
+      <div class="caixa-titulo">
+        <h1 class="texto-titulo">FOOCUS</h1>
+        <p class="texto-subtitulo">
+          Mantenha o foco e aumente sua produtividade.
+        </p>
+      </div>
+
+      <div class="caixa-timer">
+
+        <div class="caixa-tempo">
+          <span class="texto-tempo" id="timer">
+            25:00
+          </span>
+        </div>
+
+        <div class="caixa-botoes-timer">
+
+          <button class="botao-iniciar">
+            Iniciar
+          </button>
+
+          <button class="botao-pausar">
+            Pausar
+          </button>
+
+          <button class="botao-resetar">
+            Resetar
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="caixa-modos">
+
+        <button class="botao-modo botao-foco">
+          Foco
+        </button>
+
+        <button class="botao-modo botao-descanso">
+          Descanso
+        </button>
+
+      </div>
+
+      <div class="caixa-tarefas">
+
+        <div class="caixa-topo-tarefas">
+          <h2 class="texto-titulo-tarefas">
+            Tarefas do Dia
+          </h2>
+        </div>
+
+        <div class="caixa-input-tarefa">
+
+          <input
+            type="text"
+            class="input-tarefa"
+            placeholder="Digite uma tarefa..."
+          >
+
+          <button class="botao-adicionar-tarefa">
+            Adicionar
+          </button>
+
+        </div>
+
+        <ul class="lista-tarefas">
+
+          <!-- tarefas -->
+
+        </ul>
+
+      </div>
+
+      <div class="caixa-estatisticas">
+
+        <div class="card-estatistica">
+
+          <span class="texto-numero-estatistica">
+            0
+          </span>
+
+          <span class="texto-label-estatistica">
+            Sessões
+          </span>
+
+        </div>
+
+        <div class="card-estatistica">
+
+          <span class="texto-numero-estatistica">
+            0h
+          </span>
+
+          <span class="texto-label-estatistica">
+            Tempo Focado
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
